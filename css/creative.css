@@ -268,8 +268,8 @@ header.masthead p {
 }
 
 .portfolio-box {
-  position: relative;
-  display: block;
+  position:relative;
+  display:block;
   max-width: 650px;
   margin: 0 auto;
 }
@@ -301,6 +301,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  cursor: pointer;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -354,7 +355,7 @@ header.masthead p {
   border-radius: 300px;
   padding: 5px 13px;
   color: black;
-  cursor: pointer
+  cursor: pointer;
 }
 
 
