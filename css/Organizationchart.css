@@ -525,6 +525,14 @@ right: 5px;
 	.modal-header {
 		border-bottom-color: #eeeeee;
 		background-color: #fafafa;
+		display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
 	}
 	
 
@@ -728,8 +736,8 @@ right: 5px;
 
 [tooltip][flow^="left"]::before,
 [tooltip][flow^="left"]::after,
-[tooltip][flow^="right"]:hover::before,
-[tooltip][flow^="right"]:hover::after {
+[tooltip][flow^="right"]::before,
+[tooltip][flow^="right"]::after {
   animation: tooltips-horz 300ms ease-out forwards;
 }
 
