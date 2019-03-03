@@ -728,8 +728,8 @@ right: 5px;
 
 [tooltip][flow^="left"]::before,
 [tooltip][flow^="left"]::after,
-[tooltip][flow^="right"]:hover::before,
-[tooltip][flow^="right"]:hover::after {
+[tooltip][flow^="right"]::before,
+[tooltip][flow^="right"]::after {
   animation: tooltips-horz 300ms ease-out forwards;
 }
 
