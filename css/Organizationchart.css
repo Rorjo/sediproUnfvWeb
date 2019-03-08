@@ -1,0 +1,789 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* Generic styling */
+
+body{
+		
+}
+
+.content{
+	width: 100%;
+	max-width: 1142px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a:focus{
+	outline: 2px dashed white;
+}
+
+@media all and (max-width: 767px){
+	.content{
+		padding: 0 20px;
+	}	
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;		
+}
+
+.organigrama ul a{
+	display: block;
+	background: white;
+	text-align: center;
+	overflow: hidden;
+	font-size: .8em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+	height: 70px;
+	margin-bottom: -26px;
+	box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
+	-webkit-transition: all linear .1s;
+	-moz-transition: all linear .1s;
+	transition: all linear .1s;
+}
+
+.organigrama ul a:hover{
+	height: 80px;
+}
+
+.organigrama ul a:after {
+  opacity: 1;
+  width: 100%;
+}
+
+
+@media all and (max-width: 767px){
+	ul a{
+		font-size: 1em;
+	}
+}
+
+
+ul a span{
+	top: 50%;
+	margin-top: -0.7em;
+	display: block;
+}
+
+/*
+ 
+ */
+
+.administration > li > a{
+	margin-bottom: 25px;
+}
+
+.director > li > a{
+	width: 200px;
+	margin: 0 auto 0px auto;
+}
+
+.subdirector:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 134px;
+		border-left: 4px solid white;
+	background: white;
+	border-left: 4px solid white;
+	left: 45.45%;
+	position: relative;
+}
+
+
+
+.subdirector > li:first-child,
+.departments > li:first-child{	
+	width: 18.59894921190893%;
+	height: 64px;
+	margin: 0 auto 92px auto;		
+	padding-top: 25px;
+	border-bottom: 4px solid white;
+	z-index: 1;	
+}
+
+.subdirector > li:first-child{
+	float: right;
+	right: 27.2%;
+	border-left: 4px solid white;
+}
+
+.departments > li:first-child{	
+	float: left;
+	left: 27.2%;
+	border-right: 4px solid white;	
+}
+
+.subdirector > li:first-child a,
+.departments > li:first-child a{
+	width: 100%;
+}
+
+.subdirector > li:first-child a{	
+	left: 25px;
+}
+
+@media all and (max-width: 767px){
+	.subdirector > li:first-child,
+	.departments > li:first-child{
+		width: 40%;	
+	}
+
+	.subdirector > li:first-child{
+		right: 10%;
+		margin-right: 2px;
+	}
+
+	.subdirector:after{
+		left: 49.8%;
+	}
+
+	.departments > li:first-child{
+		left: 10%;
+		margin-left: 2px;
+	}
+	
+}
+
+
+.departments > li:first-child a{
+	right: 25px;
+}
+
+.department:first-child,
+.departments li:nth-child(2){
+	margin-left: 0;
+	clear: left;	
+}
+
+.departments:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 81.1%;
+	height: 28px;	
+	border-top: 4px solid white;
+	border-right: 4px solid white;
+	border-left: 4px solid white;
+	margin: 0 auto;
+	top: 130px;
+	left: 9.1%
+}
+
+@media all and (max-width: 767px){
+	.departments:after{
+		border-right: none;
+		left: -4px;
+		width: 51.5%;
+	}  
+}
+
+@media all and (min-width: 768px){
+    /* this removes the top connector from the first li */
+	/*.department:first-child:before,*/
+    /* need to remove it from first department (second li) */
+	.department:nth-child(2):before,
+   .department:last-child:before{
+    border:none;
+  }
+	.p-sidebar-info{
+	padding-top: 20%;
+}
+.text-sidebar{
+	text-align: left;
+}
+.p-sidebar-description{
+	padding-top: 50px;
+}
+.modal.right .modal-body {
+	padding: 15px 15px 80px;
+}
+.subdirector,
+.departments{
+	position: absolute;
+	width: 100%;
+	left: 50px;
+}
+.border-left-organigrama{
+	border-left: 20px solid #0C401C;
+}
+}
+
+.department:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 22px;
+	border-left: 4px solid white;
+	z-index: 1;
+	top: -22px;
+	left: 50%;
+	margin-left: -4px;
+}
+
+.department{
+	
+	/* width: 18.59894921190893%; */
+    /* use the calc() function and set the divisor to the number of departments  */
+    width: calc(92% / 4);
+	float: left;
+	margin-left: 1.751313485113835%;
+	margin-bottom: 45px;
+}
+
+.lt-ie8 .department{
+	width: 18.25%;
+}
+figure{
+	height: 300px;
+	padding-right: 8%;
+}
+.modal.right .modal-dialog {
+	position: fixed;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+.foto-junta-sidebar{
+	padding-bottom: 10px; 
+	
+	width: 95%; 
+	height: 95%;
+}
+.p-sidebar-foto{
+	padding-top: 100px;
+}
+
+
+@media all and (max-width: 767px){
+	.department{
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.department:before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 63px;
+		border-left: 4px solid white;
+		z-index: 1;
+		top: -60px;
+		left: 0%;
+		margin-left: -4px;
+	}
+
+	.department:nth-child(2):before{
+		display: none;
+	}
+	figure{
+		height: 630px;
+	}
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 90%;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		-ms-transform: translate3d(0%, 0, 0);
+		-o-transform: translate3d(0%, 0, 0);
+		transform: translate3d(0%, 0, 0);
+	}
+	.foto-junta-sidebar{
+	padding-bottom: 10px; 
+	width: 55%; 
+	height: 55%;
+}
+.text-sidebar{
+	text-align: center;
+}
+.p-sidebar-description{
+	padding-top: 10px;
+}
+.p-sidebar-foto{
+	padding-top: 10px;
+}
+.modal.right .modal-body {
+	padding: 15px 15px 10px;
+}
+.subdirector,
+.departments{
+	position: absolute;
+	width: 100%;
+	left:15px;
+}
+.border-left-organigrama{
+	border-left: 10px solid #0C401C;
+}
+.jd-titulo{
+	float: inherit
+}
+.jd-tooltip{
+	position: absolute;
+
+bottom: 170px;
+
+right: 5px;
+}
+.top-container-xs{
+	top: 100px;
+}
+}
+
+.department > a{
+	margin: 0 0 -26px -4px;
+	z-index: 1;
+}
+
+.department > a:hover{	
+	height: 80px;
+}
+.org-chart cf{
+	height: 100%;
+}
+.department > ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.department li{	
+	padding-left: 25px;
+	border-bottom: 4px solid #fff;
+	height: 80px;	
+}
+
+.department li a{
+	background: #fff;
+	top: 48px;	
+	position: absolute;
+	z-index: 1;
+	width: 90%;
+	height: 60px;
+	vertical-align: middle;
+	right: -1px;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background-image: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%) !important;
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.25)), color-stop(100%,rgba(0,0,0,0)))!important;
+	background-image: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
+	background-image: -o-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
+	background-image: -ms-linear-gradient(-45deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
+	background-image: linear-gradient(135deg,  rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#00000000',GradientType=1 );
+}
+
+.department li a:hover{
+	box-shadow: 8px 8px 9px -4px rgba(0,0,0,0.1);
+	height: 80px;
+	width: 95%;
+	top: 39px;
+	background-image: none!important;
+}
+
+/* Department/ section colors */
+.department.dep-a a{ background: white; }
+.department.dep-b a{ background: white; }
+.department.dep-c a{ background: white; }
+.department.dep-d a{ background: white; }
+.department.dep-e a{ background: white; }
+
+.invisible {
+    position: absolute;
+    left: -9999px;
+}
+
+
+  
+  .organigrama a {
+	text-decoration: none;
+	background: #eee;
+	margin-bottom: 1em;
+	display: inline-block;
+	}
+	
+	.hover-likendin:hover{
+		color: #0077b5
+	}
+  
+  .box {
+	display: block;  
+	background: lightblue;
+	margin-bottom: 1em;
+  }
+  
+  #fade-in {
+	height: 150px;
+	width: 1px;
+	opacity: 0;
+	transition: all .75s ease;
+  }
+  
+  #fade-in.show {
+	opacity: 1;
+	height: 150px;
+	width: 600px;
+  }
+  #fade-in {
+	height: 150px;
+	width: 1px;
+	opacity: 0;
+	transition: all .75s ease;
+  }
+  
+  #fade-in.show {
+	opacity: 1;
+	height: 150px;
+	width: 500px;
+  }
+  
+  #spin-in {
+	opacity: .2;
+	height: 50px;
+	width: 50px;
+	transform: translateX(0) rotate(0deg);  
+	transition: all .75s ease;
+  }
+  
+  #spin-in.show2 {
+	transform: translateX(450px) rotate(720deg);  
+	opacity: 1;
+  }
+  
+  h1.spacing {
+	letter-spacing: 0;
+	opacity: .5;
+	transition: all .75s ease-out;
+  }
+  
+  h1.spacing.spaced {
+	opacity: 1;
+	letter-spacing: 10px;
+  }
+
+
+	
+	
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	
+	
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		-moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		-o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	
+	.modal.right.fade.show .modal-dialog {
+		right: 0;
+	}
+	
+	/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+	
+	.modal-header {
+		border-bottom-color: #eeeeee;
+		background-color: #fafafa;
+		display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+	}
+	
+
+
+	
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+	.bg,
+	.button {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+	}
+	
+	
+	
+	.bg {
+		animation: pulse 1.2s ease infinite;
+		background: #b6aeb0;
+	}
+	
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		z-index: 99;
+		border: none;
+		background: #ffffff;
+		background-size: 18px;
+		cursor: pointer;
+		outline: none;
+	}
+	
+	.button a {
+		position: absolute;
+		color: #015581;
+		font-size: 17px;
+	}
+	
+	@keyframes pulse {
+		0% {
+			transform: scale(1, 1);
+		}
+		50% {
+			opacity: 0.3;
+		}
+		100% {
+			transform: scale(1.5);
+			opacity: 0;
+		}
+	}
+
+
+	/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative; /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none; /* opinion 2 */
+  font-size: .9em; /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent; /* opinion 4 */
+  z-index: 1001; /* absurdity 1 */
+}
+[tooltip]::after {
+  content: attr(tooltip); /* magic! */
+  
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  
+  /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+	max-width: 21em;
+	height: 125%;
+	width: 250px;
+	overflow: hidden;
+	font-family:Montserrat;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000; /* absurdity 2 */
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]::before,
+[tooltip]::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+
+/* FLOW: DOWN */
+[tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 5px);
+}
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+
+/* FLOW: LEFT */
+[tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333;
+  left: calc(0em - 5px);
+  transform: translate(-.5em, -50%);
+}
+[tooltip][flow^="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translate(-.5em, -50%);
+}
+
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */ 
+[tooltip]:not([flow]):hover::before,
+[tooltip]:not([flow]):hover::after,
+[tooltip][flow^="up"]:hover::before,
+[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="down"]:hover::before,
+[tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+[tooltip][flow^="left"]::before,
+[tooltip][flow^="left"]::after,
+[tooltip][flow^="right"]::before,
+[tooltip][flow^="right"]::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+/* UNRELATED to tooltips */
+body {
+
+}
+main {
+  flex: 1 1 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #49b293;
+  color: #fff;
+  padding: 1em;
+}
+main div {
+  text-align: center;
+  color: #353539;
+}
+main span {
+  padding: .5em 1em;
+  margin: .5em;
+  display: inline-block;
+  background: #dedede;
+}
+
+aside a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: .4em 1em;
+}
