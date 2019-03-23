@@ -458,3 +458,236 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
+
+
+
+  .social-bar__item {
+  padding: 10px 10px 10px 25px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  transition-property: transform, opacity;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+  }
+  .social-bar__item:hover {
+  transform: translate(15px);
+  opacity: 0.9;
+  }
+  .social-bar__fb {
+  background-color: darkslategrey;
+  }
+  .social-bar__twitter {
+  background-color: chocolate;;
+  }
+  .social-bar__linkedin {
+  background-color: green;
+  }
+  .social-bar__instagram {
+  background-color: royalblue;
+  }
+  
+  .label-img{
+    position: absolute;
+border-radius: 0px;
+width: 125px;
+height: 63px;
+background-color: #47AB6C;
+color: white;
+line-height : 25px;
+margin-top: 20px;
+margin-left: 0px;
+  }
+  .day-label-img{
+    font-size: 45px;
+    font-weight: bolder;
+    text-shadow: 3px 1px rgb(66, 66, 66);
+    padding: 0px;
+    padding-top: 19px;
+    text-align: right;
+  }
+  .month-label-img{
+    font-size: 20px;
+    padding-top: 19px;
+    line-height: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .year-label-img{
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.label-galery{
+position: absolute;
+width: 100%;
+justify-content: flex-end;
+display: flex;
+padding: 20px;
+padding-top: 29px
+}
+.li-galery{
+  background-color: #ED553B;
+  border-radius: 300px;
+  border: 15px solid #ED553B; 
+  color: white;
+  font-size: 20px
+}
+
+  
+  /*----- Tabs -----*/
+  .tabs {
+    width:100%;
+    display:inline-block;
+  }
+  
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+      display:block;
+      clear:both;
+      content:'';
+    }
+  
+    .tab-links li {
+      float:left;
+      list-style:none;
+      width: 50%;
+    }
+  
+      .tab-links a {
+        padding:9px 15px;
+        display:inline-block;
+        background:#0894A1;
+        font-size:16px;
+        font-weight:600;
+        color:white;
+        width: 100%;
+        transition:all linear 0.15s;
+      }
+  
+      .tab-links a:hover {
+        background: #112F41;
+        text-decoration:none;
+        color: white;
+      }
+  
+    li.active a, li.active a:hover {
+      background:#fff;
+      color:#4c4c4c;
+    }
+  
+    /*----- Content of Tabs -----*/
+    .tab-content {
+      padding:15px;
+      border-radius:3px;
+      background:#fff;
+    }
+  
+      .tab {
+        display:none;
+        padding: 0px 20px 0px 20px;
+        text-align: justify
+      }
+  
+      .tab.active {
+        display:block;
+      }
+.tab-links{
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.tooltip-inner{
+font-family: Montserrat;
+}
+
+.lg-sub-html h4{
+  font-family: Montserrat;
+}
+.lg-sub-html p{
+  font-family: Montserrat;
+}
+#lg-counter{
+  font-family: Montserrat;
+}
+
+.lg-actions .lg-prev, .lg-actions .lg-next{
+  background-color:rgba(131, 131, 131, 0.45);
+  border: none;
+}
+
+
+/*Dispositivos moviles*/
+@media (max-width: 520px) {
+
+  .social-bar {
+
+    position: fixed;
+   
+    bottom: -15px;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    }
+    .social-bar a{
+      width: 20%;
+      
+    }
+     .social-bar__item{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    }
+
+    .social-bar__item:hover{
+     transform: translateY(-15px);
+
+    }
+}
+
+
+/*Tabletas*/
+@media screen and (max-width: 900px) and (min-width: 521px) {
+ 
+  .social-bar {
+
+    position: fixed;
+   
+    bottom: -15px;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    }
+    .social-bar a{
+      width: 20%;
+      
+    }
+     .social-bar__item{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    }
+
+    .social-bar__item:hover{
+     transform: translateY(-15px);
+
+    }
+}
+
+
+/*Computadores*/
+@media (min-width: 901px) {
+
+  .social-bar {
+    position: fixed;
+    left: -15px;
+    top: 30%;
+    background-color: white;
+    z-index: 100;
+    }
+}
