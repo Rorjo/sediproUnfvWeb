@@ -8,7 +8,6 @@
 
 		// Change/remove current tab to active
 		jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-
 		e.preventDefault();
 	});
 });
@@ -20,7 +19,6 @@
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
-
   };
   // Collapse now if page is not at top
   navbarCollapse();
@@ -30,12 +28,9 @@
   // Scroll reveal calls
   window.sr = ScrollReveal();
 
-    $('[data-toggle="tooltip"]').tooltip()
+    
 
-    $('#element').tooltip('show')
-    setTimeout(function(){
-        $('#element').tooltip('hide')
-    },4000,"JavaScript");
+   
   
 
 
@@ -68,3 +63,22 @@
     e.preventDefault();	
 	});
 });
+
+
+    // al hacer click, animar el scroll hacia arriba
+    $('.arrow-up').click( function( e ) {
+
+      e.preventDefault();
+      $('html, body').animate( {scrollTop : 400}, 800 );
+
+    });
+
+
+      $('[data-toggle="tooltip"]').tooltip()
+    
+     window.sr = ScrollReveal();
+
+  sr.reveal('.sr-icon-1', {
+    delay: 200,
+    scale: 0
+  });
