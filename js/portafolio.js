@@ -93,11 +93,10 @@ var flag = 0;
 $(window).ready(function() {
   var mobile = isMobile();
   if (mobile) {
-    $('[data-toggle="tooltip"]').tooltip();
-
     $(window).scroll(function() {
       var pos = window.scrollY;
       if (pos > 400 && flag == 0) {
+        $('[data-toggle="tooltip"]').tooltip();
         $("#element").tooltip("show");
         setTimeout(
           function() {
