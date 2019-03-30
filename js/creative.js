@@ -188,3 +188,12 @@ $(document).ready(function() {
   });
   
 });
+
+//Open Modal
+ $(document).ready(function() {
+	$('.org-chart .administration a').on('click', function(e)  {
+		var currentAttrValue = $(this).attr('href');
+    $('#Modal'+currentAttrValue).modal('show');
+		e.preventDefault();
+	});
+});

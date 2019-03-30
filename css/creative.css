@@ -114,7 +114,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;*
+  color: #212529;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -553,7 +553,7 @@ padding-top: 29px
     .tab-links li {
       float:left;
       list-style:none;
-      width: 50%;
+      width: 33.33333333%
     }
   
       .tab-links a {
@@ -572,6 +572,50 @@ padding-top: 29px
         text-decoration:none;
         color: white;
       }
+      .tec-label{
+        background-color: #437070
+      }
+      .tec-a a{
+        background:#2A7BD6;
+      }
+  
+      .tec-a a:hover {
+        background: #5178A3;
+      }
+      .tec-ga{
+        background: #4DB203;
+        border-color: #4DB203;
+      
+      }
+      .edu-label{
+        background-color: #007F91
+      }
+      .edu-a a{
+        background:#2F5EA3;
+      }
+  
+      .edu-a a:hover {
+        background: #1D3964;
+      }
+      .edu-ga{
+        background: rgb(255, 114, 37);
+        border-color: rgb(255, 114, 37);
+      }
+      .soc-label{
+        background-color: rgb(233, 110, 43)
+      }
+      .soc-a a{
+        background:#14ABBD;
+      }
+  
+      .soc-a a:hover {
+        background: #318BA3;
+      }
+      .soc-ga{
+        background: rgb(255, 221, 0);
+        border-color: rgb(255, 221, 0);
+       
+      }
   
     li.active a, li.active a:hover {
       background:#fff;
@@ -579,11 +623,7 @@ padding-top: 29px
     }
   
     /*----- Content of Tabs -----*/
-    .tab-content {
-      padding:15px;
-      border-radius:3px;
-      background:#fff;
-    }
+    
   
       .tab {
         display:none;
@@ -635,23 +675,49 @@ font-family: Montserrat;
     display: flex;
     }
     .social-bar a{
-      width: 20%;
-      
+      width: 25%;
     }
      .social-bar__item{
     padding-left: 10px;
     padding-bottom: 20px;
+    font-size: 25px;
     }
 
     .social-bar__item:hover{
      transform: translateY(-15px);
 
     }
+    .tab-content {
+      padding:15px;
+      border-radius:3px;
+      background:#fff;
+      height: 100%;
+    }
+    .icon-team-res{
+      font-size: 35px;
+      padding-bottom: 7px;
+    }
+    .title-proyect{
+      text-align: left;
+      font-weight: bold;
+      font-family: Montserrat;
+      font-size: 25px;
+    }
+    .arrow-up{
+      font-size: 50px;
+      color: #112F41;
+      z-index: 100;
+      bottom: 0px;
+      padding: 0px 20px 100px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end
+    }
 }
 
 
 /*Tabletas*/
-@media screen and (max-width: 900px) and (min-width: 521px) {
+@media screen and (max-width: 980px) and (min-width: 521px) {
  
   .social-bar {
 
@@ -665,7 +731,7 @@ font-family: Montserrat;
     display: flex;
     }
     .social-bar a{
-      width: 20%;
+      width: 15%;
       
     }
      .social-bar__item{
@@ -677,11 +743,150 @@ font-family: Montserrat;
      transform: translateY(-15px);
 
     }
+    .tab-content {
+      padding:15px;
+      border-radius:3px;
+      background:#fff;
+      height: 100%;
+    }
+    .title-proyect{
+      text-align: left;
+      font-weight: bold;
+      font-family: Montserrat;
+      font-size: 35px;
+    }
+    .arrow-up{
+      font-size: 50px;
+      color: #112F41;
+      z-index: 100;
+      bottom: 0px;
+      padding: 0px 60px 60px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end
+    }
 }
 
+@media(max-width: 1249px) and (min-width: 970px){
+ 
+  .tab-content {
+    padding:15px;
+    border-radius:3px;
+    background:#fff;
+    height: 250px;
+  }
+  .title-proyect{
+    text-align: left;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 35px;
+  }
+  .arrow-up{
+    font-size: 50px;
+    color: #112F41;
+    z-index: 100;
+    bottom: 0px;
+    padding: 0px 60px 60px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1183px){
+  .social-bar {
+
+    position: fixed;
+   
+    bottom: -15px;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    }
+    .social-bar a{
+      width: 10%;
+      
+    }
+     .social-bar__item{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    }
+
+    .social-bar__item:hover{
+     transform: translateY(-15px);
+
+    }
+    .arrow-up{
+      font-size: 50px;
+      color: #112F41;
+      z-index: 100;
+      bottom: 0px;
+      padding: 0px 60px 60px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end
+    }
+}
+@media (max-width: 1200px) and (min-width: 970px){
+  .social-bar {
+
+    position: fixed;
+   
+    bottom: -15px;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    }
+    .social-bar a{
+      width: 10%;
+      
+    }
+     .social-bar__item{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    }
+
+    .social-bar__item:hover{
+     transform: translateY(-15px);
+
+    }
+    .tab-content {
+      padding:15px;
+      border-radius:3px;
+      background:#fff;
+      height: 300px;
+    }
+    .title-proyect{
+      text-align: left;
+      font-weight: bold;
+      font-family: Montserrat;
+      font-size: 35px;
+    }
+    .arrow-up{
+      font-size: 50px;
+      color: #112F41;
+      z-index: 100;
+      bottom: 0px;
+      padding: 0px 60px 60px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end
+    }
+}
+
+@media (max-width: 745px){
+  .icon-team-res{
+    font-size: 35px;
+    padding-bottom: 7px;
+  }
+}
 
 /*Computadores*/
-@media (min-width: 901px) {
+@media (min-width: 1251px) {
 
   .social-bar {
     position: fixed;
@@ -690,4 +895,38 @@ font-family: Montserrat;
     background-color: white;
     z-index: 100;
     }
+    .tab-one-content::before{
+      content: "Proyecto"
+    }
+    .tab-two-content::before{
+      content: "Equipo"
+    }
+    .tab-three-content::before{
+      content: "Descripción"
+    }
+    .tab-content {
+      padding:15px;
+      border-radius:3px;
+      background:#fff;
+      height: 250px;
+    }
+    .title-proyect{
+      text-align: left;
+      font-weight: bold;
+      font-family: Montserrat;
+      font-size: 35px;
+    }
+    .arrow-up{
+      font-size: 50px;
+      color: #112F41;
+      z-index: 100;
+      bottom: 0px;
+      padding: 0px 60px 60px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end
+    }
 }
+
+
+
