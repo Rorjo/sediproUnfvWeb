@@ -692,6 +692,8 @@ font-family: Montserrat;
       border-radius:3px;
       background:#fff;
       height: 100%;
+      display:flex;
+      align-items: center;
     }
     .icon-team-res{
       font-size: 35px;
@@ -748,6 +750,8 @@ font-family: Montserrat;
       border-radius:3px;
       background:#fff;
       height: 100%;
+      display:flex;
+      align-items: center;
     }
     .title-proyect{
       text-align: left;
@@ -774,6 +778,8 @@ font-family: Montserrat;
     border-radius:3px;
     background:#fff;
     height: 250px;
+    display:flex;
+    align-items: center;
   }
   .title-proyect{
     text-align: left;
@@ -859,6 +865,8 @@ font-family: Montserrat;
       border-radius:3px;
       background:#fff;
       height: 300px;
+      display:flex;
+      align-items: center;
     }
     .title-proyect{
       text-align: left;
@@ -909,6 +917,8 @@ font-family: Montserrat;
       border-radius:3px;
       background:#fff;
       height: 250px;
+      display:flex;
+      align-items: center;
     }
     .title-proyect{
       text-align: left;
