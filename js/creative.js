@@ -223,3 +223,27 @@ $(window).ready(function() {
       }
     });
 });
+
+$(window).ready(function(){
+  var ancho = screen.width;
+  if(ancho>767 && ancho<1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-8");
+    element.classList.add("col-md-11");
+  }
+});
+
+
+$(window).resize(function(){
+  var ancho = $(window).width(); 
+  if(ancho>767 && ancho<1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-8");
+    element.classList.add("col-md-11");
+  }
+   if(ancho>1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-11");
+    element.classList.add("col-md-8");
+  }
+});
