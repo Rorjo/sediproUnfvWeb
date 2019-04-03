@@ -188,12 +188,38 @@ $(document).ready(function() {
   });
   
 });
-
+var currentAttrValue="";
 //Open Modal
  $(document).ready(function() {
-	$('.org-chart .administration a').on('click', function(e)  {
-		var currentAttrValue = $(this).attr('href');
+	$('.member-details').on('click', function(e)  {
+		currentAttrValue = $(this).attr('Modal');
+    $('#element').tooltip("hide");
     $('#Modal'+currentAttrValue).modal('show');
 		e.preventDefault();
 	});
+});
+
+//Evento al cerrar Modal
+ $(document).ready(function() {
+	$('.modal-right .close').on('click', function(e)  {
+		$('#element').tooltip("show");
+		e.preventDefault();
+	});
+});
+
+
+var flag = 0;
+var flag1 = 0;
+$(window).ready(function() {
+    $(window).scroll(function() {
+      var pos = window.scrollY;
+      if (pos > 1200 && flag == 0) {
+        $("#element").tooltip("show");
+        flag++;
+      }
+      if (pos > 1900 && flag1 == 0) {
+        $("#element1").tooltip("show");
+        flag1++;
+      }
+    });
 });
