@@ -356,3 +356,8 @@
         display: flex;
     }
 }
+
+#mainNav {
+    z-index: 1900;
+  }
+  

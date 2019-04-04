@@ -96,7 +96,6 @@ img::-moz-selection {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  z-index: 1900;
 }
 
 #mainNav .navbar-brand {
