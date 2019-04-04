@@ -194,7 +194,7 @@ var currentAttrValue="";
 	$('.member-details').on('click', function(e)  {
 		currentAttrValue = $(this).attr('Modal');
     $('#element').tooltip("hide");
-    $('#Modal'+currentAttrValue).modal('show');
+    $('#Modal'+currentAttrValue).modal({backdrop: 'static', keyboard: false});
 		e.preventDefault();
 	});
 });
