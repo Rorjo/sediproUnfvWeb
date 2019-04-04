@@ -33,14 +33,16 @@
 	$('.label-galery a').on('click', function(e)  {
 		var project = $(this).attr('href');
     var nfoto = $(this).attr('nFotos');
-
+    var nProjecto = $(this).attr('nProject');
+    var pTitulo = $(this).attr('pTitle');
+    var pDescr = $(this).attr('pDescripcion');
     let element = []
 
       for (var i=0;i<nfoto;i++){
         element.push({ 
-          "src": '../img/project/project'+project+'/fullsize/'+(i+1)+'.jpg',
-          'thumb': '../img/project/project'+project+'/thumbnails/'+(i+1)+'.jpg',
-          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'  
+          "src": '../img/project/'+nProjecto+'/project'+project+'/fullsize/'+(i+1)+'.jpg',
+          'thumb': '../img/project/'+nProjecto+'/project'+project+'/fullsize/'+(i+1)+'.jpg',
+          'subHtml': '<h4>'+pTitulo+'</h4><p>'+pDescr+'</p>'  
         },)
     }
     var cl=$(this).lightGallery({
