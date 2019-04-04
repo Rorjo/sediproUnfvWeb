@@ -27,11 +27,10 @@
 
   <!-- Organigrama CSS3 -->
   <link href="css/Organizationchart.css" rel="stylesheet">
-  <link href="css/diamond_grid.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="font-family:Montserrat">
@@ -112,110 +111,69 @@
           </div>
       </div>
 </section>
-
-
 <section id="about" style="background: #015581">
   <!-- Team Members Row -->
-  <div class="container" >
-    <div class="row" id="element" data-toggle="tooltip" data-placement="top" title="Da clic en las fotos para conocer más de esa persona.">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-white" style="font-family:Montserrat">Junta Directiva 2018 
-          <i style="padding-left: 10px" class="fas fa-users"></i></h2>
-        <hr class="my-4" style="border-color: white">
+  <div class="container top-container-xs">
+      <div class="row" style="font-family:Montserrat">
+
+          <div  class="col-lg-12">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 jd-titulo">
+              <h3 class="my-4 text-white" style="padding-bottom: 30px">Organigrama SEDIPRO UNFV 2018 </h3>
+          </div>
+
+          <div  class="col-lg-6 col-md-6 col-xs-6 col-sm-6 jd-tooltip" style="display: flex; justify-content: flex-end; padding-top: 20px">
+
+                  <div class="bg"></div>
+                  <div tooltip="Da click en un puesto del 
+                  organigrama para conocer a la persona 
+                  encargada." flow="left" class="button sr-icon-3"><a ><i class="fas fa-sitemap" style="color: #015581" aria-hidden="true"></i></a>
+          
       </div>
-    </div>
+      </div>
+      </div>
+              <figure class="org-chart cf sr-icon-1" id="organigrama">
+                  <ul class="administration organigrama">
+                      <li>					
+                          <ul class="director">
+                              <li>
+                                  <a class="slide card" href="Presi"><span>Presidente</span></a>
+                                  <ul class="subdirector">
+                                  </ul>
+                                  <ul class="departments cf">								
+                                      <li><a class="slide card" href="Vice"><span>Vicepresidente</span></a></li>
+
+                                      <li class="department dep-a">
+                                          <a class="card" href="PMO"><span>Director PMO</span></a>
+
+                                      </li>
+                                      <li class="department dep-b">
+                                          <a class="card" href="Comu"><span>Directora de Comunicaciones</span></a>
+
+                                      </li>
+                                      <li class="department dep-c">
+                                          <a class="card" href="TH"><span>Directora de Talento Humano</span></a>
+
+                                      </li>
+
+                                      <li class="department dep-e">
+                                          <a class="card" href="Admf"><span>Director de Admón y Finanzas</span></a>
+
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>	
+                      </li>
+                  </ul>			
+              </figure>
+          </div>
+      </div>
   </div>
-
-  <div class="row flex-center sm-no-flex" style="font-family:Montserrat">
-
-    <div class="pull-right sm-no-float col-md-8">
-        <ul class="team-members">
-            <!-- single member row starts -->
-            <li class="clearfix">
-               
-                
-                <div class="member-details sr-icon-1" Modal="Presi">
-                    <div class="border-diamond">
-                        <img src="img/junta/presi.jpeg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Fiorela<br>Lima</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="member-details sr-icon-2" Modal="Presi1">
-                    <div class="border-diamond">
-                        <img src="img/junta/vice.jpg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Desconocido</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-            </li><!-- /single member row ends -->
-            
-            <!-- single member row starts -->
-            <li class="clearfix">
-               
-                
-                <div class="member-details sr-icon-3" Modal="PMO">
-                    <div class="border-diamond">
-                        <img src="img/junta/pmo.jpg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Eduardo<br>Perez</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="member-details sr-icon-4" Modal="TH">
-                    <div class="border-diamond">
-                        <img src="img/junta/th.jpg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Angelica Aquino</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-            </li><!-- /single member row ends -->
-
-            <!-- single member row starts -->
-            <li class="clearfix">
-                
-                 
-                <div class="member-details sr-icon-5" Modal="Admf">
-                    <div class="border-diamond">
-                        <img src="img/junta/admf.jpg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Victor De<br>La Cruz</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="member-details sr-icon-6" Modal="Comu">
-                    <div class="border-diamond">
-                        <img src="img/junta/comu.jpg" alt="UI Designer">
-                        <div class="member-info">
-                            <h3>Cynthia<br>Ytme</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-            </li><!-- /single member row ends -->
-
-        </ul><!-- /end team-photos -->
-    </div><!-- /end col-md-8 -->
-    
-    
-</div><!-- /end row -->
-
 </section>
 
   <section id="services">
     <div class="container">
-      <div class="row" id="element1" data-toggle="tooltip" data-placement="top" title="Da clic en los iconos para conocer acerca de nuestros proyectos realizados.">
+      <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading" style="font-family:Montserrat">¿Qué proyectos hacemos?</h2>
           <hr class="my-4">
@@ -417,22 +375,22 @@
               <br>
             </div>
             <div class="row; col-lg-12 ml-auto text-center">
-              <div class="row" style="display: flex; justify-content: center; padding-bottom: 50px;">
-                <div class=" col-2 text-center">
+              <div class="row" style="padding-right:30px; padding-left: 90px">
+                <div class=" mr-auto text-center">
                   <a target="_blank" href="https://www.facebook.com/sedipro.unfv"><i class="fab fa-facebook-f fa-2x mb-3 sr-contact-1 sediproColor"></i>
                   </a>
                 </div>
-                <div class="col-2 text-center">
+                <div class="mr-auto text-center">
                   <a target="_blank" href="https://twitter.com/SEDIPROUNFV"><i class="fab fa-twitter fa-2x mb-3 sr-contact-1 sediproColor"></i></a>
                 </div>
-                <div class=" col-2 text-center">
+                <div class=" mr-auto text-center">
                   <a target="_blank" href="https://www.instagram.com/sedipro.unfv/"><i class="fab fa-instagram fa-2x mb-3 sr-contact-1 sediproColor"></i></a>
                 </div>
-                <div class=" col-2 text-center">
+                <div class=" mr-auto text-center">
                   <a target="_blank" href="https://www.youtube.com/user/SEDIPROUNFV"><i class="fab fa-youtube fa-2x mb-3 sr-contact-1 sediproColor"></i></a>
                 </div>
 
-                <div class="col-2 text-center">
+                <div class="mr-auto text-center">
                   <a target="_blank" href="https://www.linkedin.com/company/sedipro-unfv"><i class="fab fa-linkedin-in fa-2x mb-3 sr-contact-1 sediproColor"></i></a>
                 </div>
 
@@ -473,7 +431,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-          <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+          <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
 
                   <span aria-hidden="true">&times;</span>
@@ -518,7 +476,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-        <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+        <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -567,7 +525,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-        <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+        <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -614,7 +572,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-        <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+        <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -660,7 +618,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-        <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+        <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -707,7 +665,7 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content">
 
-        <div class="modal-right" style="background: white; padding-top: 5px; padding-right: 15px">
+        <div class="" style="background: white; padding-top: 5px; padding-right: 15px">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black; font-weight: bold; font-size: 40px">
               <span aria-hidden="true">&times;</span>
           </button>
