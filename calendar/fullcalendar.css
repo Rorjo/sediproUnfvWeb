@@ -1399,18 +1399,16 @@ body {
   line-height: 1.1em;
 }
 .wrapper .event .event-info p.time:before {
-  content: "\f017";
   font-family: 'FontAwesome', sans-serif;
   margin-right: 0.5em;
 }
 .wrapper .event .event-info p.location:before {
-  content: "\f041";
   font-family: 'FontAwesome', sans-serif;
   margin-right: 0.5em;
 }
 .location{
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .wrapper .event .event-info p.description {
   line-height: 1.75em;
@@ -1420,7 +1418,7 @@ body {
 }
 .time{
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .wrapper .event .event-info p a {
   color: #fff;
@@ -1488,5 +1486,8 @@ body {
   }
   .list-view-events{
     height: 520px;
+  }
+  .wrapper .event .event-info .event-date-wrapper .date.end:before {
+    top: 39%;
   }
 }
