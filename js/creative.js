@@ -193,33 +193,33 @@ var currentAttrValue="";
  $(document).ready(function() {
 	$('.member-details').on('click', function(e)  {
 		currentAttrValue = $(this).attr('Modal');
-    $('#element').tooltip("hide");
-    $('#Modal'+currentAttrValue).modal('show');
-		e.preventDefault();
-	});
-});
-
-//Evento al cerrar Modal
- $(document).ready(function() {
-	$('.modal-right .close').on('click', function(e)  {
-		$('#element').tooltip("show");
+    $('#Modal'+currentAttrValue).modal({backdrop: 'static', keyboard: false});
 		e.preventDefault();
 	});
 });
 
 
-var flag = 0;
-var flag1 = 0;
-$(window).ready(function() {
-    $(window).scroll(function() {
-      var pos = window.scrollY;
-      if (pos > 1200 && flag == 0) {
-        $("#element").tooltip("show");
-        flag++;
-      }
-      if (pos > 1900 && flag1 == 0) {
-        $("#element1").tooltip("show");
-        flag1++;
-      }
-    });
+
+$(window).ready(function(){
+  var ancho = screen.width;
+  if(ancho>767 && ancho<1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-8");
+    element.classList.add("col-md-11");
+  }
+});
+
+
+$(window).resize(function(){
+  var ancho = $(window).width(); 
+  if(ancho>767 && ancho<1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-8");
+    element.classList.add("col-md-11");
+  }
+   if(ancho>1001){
+    var element = document.getElementById("diamond");
+    element.classList.remove("col-md-11");
+    element.classList.add("col-md-8");
+  }
 });

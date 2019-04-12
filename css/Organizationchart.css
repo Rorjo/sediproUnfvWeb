@@ -621,17 +621,16 @@ right: 5px;
     */
   min-width: 3em;
 	max-width: 21em;
-	height: 125%;
 	width: 250px;
 	overflow: hidden;
 	font-family:Montserrat;
   text-overflow: ellipsis;
   padding: 1ch 1.5ch;
   border-radius: .3ch;
-  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
-  background: #333;
+  background: #000;
   color: #fff;
-  z-index: 1000; /* absurdity 2 */
+	z-index: 1000; /* absurdity 2 */
+	line-height: 18px;
 }
 
 /* Make the tooltips respond to hover */
@@ -651,11 +650,11 @@ right: 5px;
 [tooltip][flow^="up"]::before {
   bottom: 100%;
   border-bottom-width: 0;
-  border-top-color: #333;
+  border-top-color: #000;
 }
 [tooltip]:not([flow])::after,
 [tooltip][flow^="up"]::after {
-  bottom: calc(100% + 5px);
+  bottom: calc(100% + 4.5px);
 }
 [tooltip]:not([flow])::before,
 [tooltip]:not([flow])::after,
@@ -726,8 +725,8 @@ right: 5px;
 /* FX All The Things */ 
 [tooltip]:not([flow]):hover::before,
 [tooltip]:not([flow]):hover::after,
-[tooltip][flow^="up"]:hover::before,
-[tooltip][flow^="up"]:hover::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after,
 [tooltip][flow^="down"]:hover::before,
 [tooltip][flow^="down"]:hover::after {
   animation: tooltips-vert 300ms ease-out forwards;
@@ -786,4 +785,8 @@ aside a {
   font-weight: bold;
   display: inline-block;
   padding: .4em 1em;
+}
+
+.modal{
+	z-index: 2000;
 }
