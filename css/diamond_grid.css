@@ -250,3 +250,114 @@
    border: 4px solid white;
    border-radius: 10px;
 }
+
+@media screen and (max-width: 550px) and (min-width: 532px) { 
+    .sm-no-float ul{
+        top: 0 !important;
+        left: 4.5% !important;
+    }
+    .sm-no-flex{
+        width: 100%;
+        height: 450px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 653px) and (min-width: 551px) { 
+    .sm-no-float ul{
+        
+        left: 21% !important;
+    }
+    .sm-no-flex{
+        width: 83% !important;
+        height: 200px !important;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 551px) { 
+ 
+    .sm-no-flex{
+        width: 83% !important;
+        height: 160px !important;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 757px) and (min-width: 654px) { 
+    .sm-no-float ul{
+        
+        left: 21% !important;
+    }
+    .sm-no-flex{
+        width: 82% !important;
+        height: 220px !important;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 758px) { 
+    .sm-no-float ul{
+        
+        left: 21% !important;
+    }
+    .sm-no-flex{
+        width: 82% !important;
+        height: 250px !important;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) { 
+    .sm-no-float ul{
+        
+        left: 18% !important;
+    }
+    .sm-no-flex{
+        width: 87% !important;
+        height: 250px !important;
+        display: flex;
+    }
+}
+@media screen and (max-width: 1001px) and (min-width: 900px) { 
+    .sm-no-float ul{
+        
+        left: 18% !important;
+    }
+    .sm-no-flex{
+        width: 87% !important;
+        height: 350px !important;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1002px) { 
+    .sm-no-float ul{
+        
+        left: 7% !important;
+    }
+    .sm-no-flex{
+        width: 100% !important;
+        height: 350px !important;
+        display: flex;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) { 
+    .sm-no-float ul{
+        
+        left: 18% !important;
+    }
+    .sm-no-flex{
+        width: 87% !important;
+        height: 450px !important;
+        display: flex;
+    }
+}
+
+#mainNav {
+    z-index: 1900;
+  }
+  

@@ -27,7 +27,7 @@
 
 
   <!--Full calendar IO CSS -->
-  <link href='../calendar/fullcalendar.min.css' rel='stylesheet' />
+  <link href='../calendar/fullcalendar.css' rel='stylesheet' />
   <link href='../calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
 
 
@@ -71,18 +71,75 @@
           <p class="mb-5">Revisa nuestros próximos eventos!</p>
         </div>
       </div>
-      <div class="row">
-        <br />
-        <div class="ui container">
-          <div class="ui grid">
-            <div class="ui sixteen column">
-              <div id="calendarUI"></div>
+      <div class="row card-events">
+        <div class="col-12 col-md-8">
+            <br />
+            <div class="ui container" style="padding-bottom: 20px">
+              <div class="ui grid">
+                <div class="ui sixteen column">
+                  <div id="calendarUI"></div>
+                </div>
+              </div>
             </div>
-          </div>
+        </div>
+        <div class="col-12 col-md-4 list-view-events" style="font-family:Montserrat">
+          <div class="row title-list-view"><h3>Nuestro Eventos</h3></div>
+            <div class="wrapper" style="margin-top: 20px;">
+                  <div class="event">
+                      <div class="event-info yellow">
+                        <div class="event-date-wrapper">
+                          <p class="date start yellow">OCT<br> 22</p>
+                          <p class="date end yellow">OCT<br> 24</p>
+                        </div>
+                        <div class="event-header">
+                          <h1>Residence Hall Opens for Returning Students</h1>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> Kent Hall</p>
+                          <p class="time"> <i class="far fa-clock"></i> 7am-5pm</p>
+                        </div>
+                        <p class="description"><a href="#">read more &raquo;</a></p>
+                      </div>
+                      <img src="http://loremflickr.com/600/300?random=1" />
+                    </div>
+
+                    <div class="event">
+                        <div class="event-info blue">
+                          <div class="event-date-wrapper">
+                            <p class="date start blue">OCT<br> 22</p>
+                            <p class="date end blue">OCT<br> 24</p>
+                          </div>
+                          <div class="event-header">
+                            <h1>Residence Hall Opens for Returning Students</h1>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Kent Hall</p>
+                            <p class="time"><i class="far fa-clock"></i> 7am-5pm</p>
+                          </div>
+                          <p class="description"><a href="#">read more &raquo;</a></p>
+                        </div>
+                        <img src="http://loremflickr.com/600/300?random=2" />
+                      </div>
+                  
+                    <div class="event free">
+                      <div class="event-info red">
+                        <div class="event-date-wrapper">
+                          <p class="date start red">SEPT<br> 10</p>
+                        </div>
+                        <div class="event-header">
+                          <h1>Residence Hall Opens for Returning Students</h1>
+                          <p class="location"> <i class="fas fa-map-marker-alt"></i> Townhouse Greens</p>
+                          <p class="time"><i class="far fa-clock"></i> All Day</p>
+                        </div>
+                        <p class="description"><a href="#">read more &raquo;</a></p>
+                      </div>
+                      <img src="http://loremflickr.com/600/300?random=3" />
+                    </div>
+    </div>          
         </div>
       </div>
     </div>
   </section>
+
+
+  
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
